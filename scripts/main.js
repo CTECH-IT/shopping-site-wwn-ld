@@ -6,7 +6,7 @@
     const SERVER_URL = 'https://coffeerun-V2-rest-api.herokuapp.com/api/coffeeorders';
 
     let App = window.App;
-    let Storage = Storage;
+    let Storage = App.Storage;
 
     let remoteDS = new RemoteDataStore(SERVER_URL);
 
