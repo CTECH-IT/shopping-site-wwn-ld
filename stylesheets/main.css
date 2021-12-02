@@ -9,3 +9,7 @@ body {
 .logo-text{
     background: rgb(250, 243, 183);
 }
+body {
+    background-image: url("stylesheets/Paper/Paper.PNG");
+   }
+   
