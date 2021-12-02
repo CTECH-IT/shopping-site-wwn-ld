@@ -2,12 +2,8 @@ form :invalid {
     border-color: rgb(202, 0, 0)
 }
 
-.logo-text{
-    background: rgb(250, 243, 183);
-}
 body {
     background-image: url("Paper/Paper.PNG");
     background-repeat: no-repeat;
     background-size: cover;
-   }
-   
+}
