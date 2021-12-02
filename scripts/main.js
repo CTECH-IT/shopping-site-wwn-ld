@@ -7,6 +7,7 @@
 
     let App = window.App;
     let Storage = App.Storage;
+    let remotedatastore = App.remotedatastore;
 
     let remoteDS = new RemoteDataStore(SERVER_URL);
 
