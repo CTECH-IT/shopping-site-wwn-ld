@@ -35,6 +35,7 @@
         description += ' (' + Order.Option1 + ')';
         description += ' (' + Order.Option2 + ')';
         description += ' (' + Order.Option3 + ')';
+        description += ' (' + Order.Option4 + ')';
 
         $label.append($checkbox);
         $label.append(description);
