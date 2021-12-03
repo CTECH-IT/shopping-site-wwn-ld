@@ -34,6 +34,7 @@
         let description = Order.emailAddress + ' ';
         description += ' (' + Order.Option1 + ')';
         description += ' (' + Order.Option2 + ')';
+        description += ' (' + Order.Option3 + ')';
 
         $label.append($checkbox);
         $label.append(description);
