@@ -4,7 +4,7 @@ form :invalid {
 
 body {
     background-image: url("Paper/Paper.PNG");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 
