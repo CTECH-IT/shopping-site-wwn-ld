@@ -30,8 +30,9 @@
             type: 'checkbox',
             value: Order.emailAddress
         });
-        description += ' (' + Order.emailAddress + ')';
-        description += ' (' + Order.
+        let description = Order.emailAddress + ' ';
+        description += ' (' + Order.Option1 + ')';
+        description += ' (' + Order.Option2 + ')';
 
         $label.append($checkbox);
         $label.append(description);
