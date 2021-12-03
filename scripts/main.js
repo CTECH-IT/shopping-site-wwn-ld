@@ -15,7 +15,7 @@
 
     let myStorage = new Storage('001', remoteDS);
     let checklist = new CheckList(CHECKLIST_SELECTOR);
-    checklist.addClickHandler(myTruck.deliverOrder.bind(myTruck))
+    checklist.addClickHandler(myStorage.deliverOrder.bind(myStorage))
     
     window.myStorage = myStorage;
 
