@@ -4,6 +4,7 @@
     const FORM_SELECTOR = '[data-order="form"]';
     const CHECKLIST_SELECTOR = '[data-order="checklist"]';
     const SERVER_URL = 'https://coffeerun-V2-rest-api.herokuapp.com/api/coffeeorders';
+    //*the link is being finiky
 
     let App = window.App;
     let Storage = App.Storage;
