@@ -6,6 +6,9 @@
         isCompanyEmail: function (email) {
             return /.+@gmail\.com$/.test(email);
         }
+        //isCompanyID: function (ID) {
+          //  return /001/.test(ID);
+        //}
     };
 
     App.Validation = Validation;
