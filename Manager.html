@@ -3,5 +3,39 @@
     <head>
     <meta charset="utf=8">
     <title>Order Forum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     </head>
+
+    <body class="container">
+
+        <header>
+            <h1>Orders</h1>
+            <a href="Index.html">Main Site</a>
+        </header>
+        <section>
+            <form data-order="form">
+            <div class= "form-group">
+                <label for="emailInput">Manager ID</label>
+                <input class="form-control" type="email" name="emailAddress" id="emailInput" value="" placeholder="user@company.com" required>
+            </div>
+            <div class="card card-default">
+                <div class="card-body">
+                  <h4>Pending Orders:</h4>
+                  <div data-order="checklist">
+                  </div>
+                </div>
+              </div>
+            </form>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+        <script src="scripts/validation.js" charset="utf-8"></script>    
+        <script src="scripts/checklist.js" charset="utf-8"></script>
+        <script src="scripts/formhandler.js" charset="utf-8"></script>
+        <script src="scripts/remotedatastore.js" charset="utf-8"></script>
+        <script src="scripts/datastore.js" charset="utf-8"></script>
+        <script src="scripts/storage.js" charset="utf-8"></script>
+        <script src="scripts/main.js" charset="utf-8"></script>
+        <script src="" charset='utf-8'></script>
+    </body>
 </html>
