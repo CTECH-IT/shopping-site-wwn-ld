@@ -23,14 +23,14 @@
     };
 
     RemoteDataStore.prototype.get = function (key, cb) {
-        $.get(this.serverUrl + '/' + key, function (serverResponse) {
+        $.get(this.serverUrl + '?emailAddress' + key, function (serverResponse) {
             console.log(serverResponse);
             cb(serverResponse);
         });
     };
 
     RemoteDataStore.prototype.remove = function (key) {
-        $.ajax(this.serverUrl + '/' + key, {
+        $.ajax(this.serverUrl + 'emailAddress' + key, {
             type: 'DELETE'});
     };
 
