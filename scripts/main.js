@@ -3,7 +3,7 @@
 
     const FORM_SELECTOR = '[data-order="form"]';
     const CHECKLIST_SELECTOR = '[data-order="checklist"]';
-    const SERVER_URL = 'http://saturn.rochesterschools.org:8080/json';
+    const SERVER_URL = 'http://saturn.rochesterschools.org:8080/json?emailAddress=jobartucz@isd535.org';
     //*the link is being finiky
 
     let App = window.App;
