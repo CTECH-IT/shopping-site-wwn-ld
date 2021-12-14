@@ -2,5 +2,9 @@
     'use strict';
     let App = window.App || {};
     let $ = window.jQuery;
-    //let 
+    
+    //let
+
+    App.Manager = Manager;
+    window.App = App;
 })(window);
