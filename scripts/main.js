@@ -4,13 +4,14 @@
     const FORM_SELECTOR = '[data-order="form"]';
     const CHECKLIST_SELECTOR = '[data-order="checklist"]';
     const SERVER_URL = 'https://saturn.rochesterschools.org/python/JS-remote-datastore/data.json';
-    //*the link is being finiky
 
     let App = window.App;
     let Storage = App.Storage;
+    let DataStore = App.DataStore;
     let RemoteDataStore = App.RemoteDataStore;
     let FormHandler = App.FormHandler;
     let CheckList = App.CheckList;
+    let Validation = App.Validation;
 
     let remoteDS = new RemoteDataStore(SERVER_URL);
 
@@ -26,5 +27,7 @@
         myStorage.createOrder.call(myStorage, data);
         checklist.addRow.call(checklist, data);
     });
+
+    formHandler.addInputHandler(Validation.isCompanyEmail);
 
 })(window);
