@@ -32,6 +32,7 @@
         });
         // Orders (Folow the set up below with the name of the option next in line.)
         let description = Order.emailAddress + ' ';
+        description += 'Origin WWN+LD';
         description += ' (' + Order.Option1 + ')';
         description += ' (' + Order.Option2 + ')';
         description += ' (' + Order.Option3 + ')';
