@@ -20,6 +20,10 @@
     checklist.addClickHandler(myStorage.deliverOrder.bind(myStorage))
     
     window.myStorage = myStorage;
+    remoteDS.getall(function (orders){
+        neworder=0;
+        myStorage.createOrder(neworder);
+    });
 
     let formHandler = new FormHandler(FORM_SELECTOR);
 

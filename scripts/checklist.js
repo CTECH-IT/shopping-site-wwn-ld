@@ -2,7 +2,6 @@
     'use strict';
     let App = window.App || {};
     let $ = window.jQuery;
-    let RemoteDataStore = App.RemoteDataStore;
     function CheckList(selector) {
         if (!selector){
             throw new Error('No selector provided');
@@ -11,7 +10,6 @@
         if(this.$element.length === 0) {
             throw new Error("Couldn't find element with selector: " + selector);
         }
-        RemoteDataStore.getAll()
     }
 
     CheckList.prototype.removeRow =  function (email) {
