@@ -16,14 +16,13 @@
     let remoteDS = new RemoteDataStore(SERVER_URL);
 
     let myStorage = new Storage('001', remoteDS);
-    //let neworder = (o);
     let checklist = new CheckList(CHECKLIST_SELECTOR);
     checklist.addClickHandler(myStorage.deliverOrder.bind(myStorage))
     
     window.myStorage = myStorage;
     remoteDS.getAll(function (Order){
-        //neworder = unknown;
-        myStorage.createOrder(neworder);
+        CheckList = 0;
+        myStorage.createOrder(CheckList);
     });
 
     let formHandler = new FormHandler(FORM_SELECTOR);
