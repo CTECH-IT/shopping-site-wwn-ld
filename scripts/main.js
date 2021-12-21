@@ -21,7 +21,7 @@
     
     window.myStorage = myStorage;
     remoteDS.getAll(function (Order){
-        CheckList = remoteDS;//                        <------ Fix
+        CheckList = remoteDS.db;//                        <------ Fix
         myStorage.createOrder(CheckList);
     });
 
